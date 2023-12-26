@@ -1,39 +1,40 @@
 name: PHP Composer
 
-on:
+en:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
-permissions:
-  contents: read
+permisos:
+  contenido: leer
 
-jobs:
-  build:
+trabajos:
+  construir:
 
-    runs-on: ubuntu-latest
+    se-ejecuta-en: ubuntu-último
 
-    steps:
-    - uses: actions/checkout@v3
+    pasos:
+    - usa: actions/checkout@v3
 
-    - name: Validate composer.json and composer.lock
+    - nombre: Validar composer.json y composer.lock
       run: composer validate --strict
 
-    - name: Cache Composer packages
+    - nombre: Caché de paquetes de Composer
       id: composer-cache
-      uses: actions/cache@v3
-      with:
+      usa: actions/cache@v3
+      con:
         path: vendor
         key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
         restore-keys: |
           ${{ runner.os }}-php-
 
-    - name: Install dependencies
+    - nombre: Instalar dependencias
       run: composer install --prefer-dist --no-progress
 
-    # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
-    # Docs: https://getcomposer.org/doc/articles/scripts.md
+    - nombre: Ejecutar PHPMailer
+      run: php hola123/phpmailer.php
+
 
     # - name: Run test suite
     #   run: composer run-script test
