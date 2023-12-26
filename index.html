@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v5.8.14, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/images/logonuevo.jpg" type="image/x-icon">
+    <meta name="description" content="">
+
+
+    <title>gestionhumanags</title>
+    <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="assets/socicon/css/styles.css">
+    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap">
+    </noscript>
+    <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+
+
+
+</head>
+
+<body>
+
+    <section data-bs-version="5.1" class="menu menu2 cid-tX2mtyDqx6" once="menu" id="menu2-0">
+
+        <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+            <div class="container">
+                <div class="navbar-brand">
+                    <span class="navbar-logo">
+                        <a href="index.html#top">
+                            <img src="assets/images/logonuevo.jpg" alt="" style="height: 3rem;">
+                        </a>
+                    </span>
+                    <span class="navbar-caption-wrap"><a class="navbar-caption text-black text-primary display-7"
+                            href="index.html#top">Gestion Humana -- Gestion Salud</a></span>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse"
+                    data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+                        <li class="nav-item"><a class="nav-link link text-black display-4" href="https://mobiri.se"></a>
+                        </li>
+                    </ul>
+
+                    <div class="navbar-buttons mbr-section-btn"><a class="btn btn-white-outline display-4" href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section data-bs-version="5.1" class="header14 cid-sFzxmVl7J6" id="header14-1f">
+
+
+
+
+
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-6 image-wrapper">
+                    <img src="assets/images/mbr-1256x829.jpg" alt="">
+                </div>
+                <div class="col-12 col-md">
+                    <div class="text-wrapper">
+                        <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong>¿Deseas Trabajar con
+                                Nosotros?&nbsp;</strong></h1>
+                        <p class="mbr-text mbr-fonts-style display-7"></p>
+
+
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>Adjuntar HV</title>
+                            <link rel="stylesheet" href="styles.css">
+                        </head>
+
+
+                        <body>
+
+
+
+
+
+                            <button onclick="mostrarPopup()">Adjuntar HV</button>
+                            <div id="overlay"></div>
+
+                            <div id="popup">
+
+                                <form action="enviar_correo.php" method="post"
+                                    enctype="multipart/form-data">
+
+
+                                    <button id="cerrarBoton" onclick="cerrarPopup()">X</button>
+
+                                   <img style="margin-left: auto" width="auto" height="250" src="assets/images/logonuevo.jpg" >
+
+
+                                    <label for="nombreApellido">Nombre y apellido:</label>
+                                    <input type="text" name="nombreApellido" id="nombreApellido" required><br>
+
+                                    <label for="cargo">Cargo al que aspira:</label>
+                                    <input type="text" name="cargo" id="cargo" required><br>
+
+                                    <label for="correo">Correo electrónico:</label>
+                                    <input type="email" name="correo" id="correo" required><br>
+
+                                    <label for="telefono">Número de teléfono:</label>
+                                    <input type="tel" name="telefono" id="telefono" required><br>
+
+                                    <label for="archivo">Adjuntar archivo:</label>
+                                    <input type="file" name="archivo" id="archivo" accept=".pdf, .doc, .docx"
+                                        onchange="checkFileSize()"><br>
+
+                                    <button type="submit" >Enviar formulario</button>
+                                    
+                                </form>
+                            </div>
+
+
+                         
+
+                            <script src="script.js"></script>
+
+                        </body>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section data-bs-version="5.1" class="info1 cid-tX2toLcC56" id="info1-1">
+
+
+
+
+        <div class="align-center container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <h3 class="mbr-section-title mb-4 mbr-fonts-style display-5"><strong>Pruebas Psicotecnicas</strong>
+                    </h3>
+
+                    <div class="mbr-section-btn"><a class="btn btn-white display-4" href="index.html#top">Iniciar tus
+                            pruebas</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section data-bs-version="5.1" class="features1 cid-sFzyUE9AaP" id="features1-1i">
+
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-9">
+                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">Evaluaciones de Desempeño
+                    </h3>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="card col-12 col-md-6 col-lg-3">
+                    <div class="card-wrapper">
+                        <div class="card-box align-center">
+                            <div class="iconfont-wrapper">
+                                <a href="http://190.109.24.182:8089/evaluacion/login.php" target="_blank"><span
+                                        class="mbr-iconfont mobi-mbri-contact-form mobi-mbri"></span></a>
+                            </div>
+                            <h5 class="card-title mbr-fonts-style display-5"><strong>Evaluacion Asistencial</strong>
+                            </h5>
+                            <p class="card-text mbr-fonts-style display-7">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Nunc&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-6 col-lg-3">
+                    <div class="card-wrapper">
+                        <div class="card-box align-center">
+                            <div class="iconfont-wrapper">
+                                <a href="http://190.109.24.182:8089/evaluacion_administrativo/login.php"
+                                    target="_blank"><span
+                                        class="mbr-iconfont mobi-mbri-growing-chart mobi-mbri"></span></a>
+                            </div>
+                            <h5 class="card-title mbr-fonts-style display-5"><strong>Evaluacion Administrativos</strong>
+                            </h5>
+                            <p class="card-text mbr-fonts-style display-7">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Nunc&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-6 col-lg-3">
+                    <div class="card-wrapper">
+                        <div class="card-box align-center">
+                            <div class="iconfont-wrapper">
+                                <a href="http://190.109.24.182:8089/evaluacion_lider/login.php" target="_blank"><span
+                                        class="mbr-iconfont mobi-mbri-cash mobi-mbri"></span></a>
+                            </div>
+                            <h5 class="card-title mbr-fonts-style display-5"><strong>Evaluacion Lideres</strong></h5>
+                            <p class="card-text mbr-fonts-style display-7">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Nunc ut dapibus massa varius augue.&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section data-bs-version="5.1" class="team2 cid-tX8m6agvD5" xmlns="http://www.w3.org/1999/html" id="team2-4">
+
+
+
+
+        <div class="container">
+            <div class="card">
+                <div class="card-wrapper">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-2">
+                            <div class="image-wrapper">
+                                <a href="http://190.109.24.182:8089/CERTIFICADO_LABORAL/login.php" target="_blank"><img
+                                        src="assets/images/mbr-1.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md">
+                            <div class="card-box">
+                                <h5 class="card-title mbr-fonts-style m-0 mb-3 display-5"><strong>&lt;-- Genera tu
+                                        certificado Laboral.</strong></h5>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section data-bs-version="5.1" class="team2 cid-tX8jXR91pS" xmlns="http://www.w3.org/1999/html" id="team2-3">
+
+
+
+
+        <div class="container">
+            <div class="card">
+                <div class="card-wrapper">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-2">
+                            <div class="image-wrapper">
+                                <a href="http://190.109.24.182:8080/CRONOSCERTIFICADOS/" target="_blank"><img
+                                        src="assets/images/mbr-2.jpeg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md">
+                            <div class="card-box">
+                                <h5 class="card-title mbr-fonts-style m-0 mb-3 display-5"><strong>&lt;-- Genera tu
+                                        certificado Laboral.</strong></h5>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section data-bs-version="5.1" class="team2 cid-tX8jXR91pS" xmlns="http://www.w3.org/1999/html" id="team2-3">
+
+
+
+
+        <div class="container">
+            <div class="card">
+                <div class="card-wrapper">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-2">
+                            <div class="image-wrapper">
+                                <a href="https://talenthi.co/" target="_blank"><img
+                                        src="assets/images/OIP.jpeg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md">
+                            <div class="card-box">
+                                <h5 class="card-title mbr-fonts-style m-0 mb-3 display-5"><strong>&lt;-- Talenthi.</strong></h5>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section data-bs-version="5.1" class="form5 cid-sFzDs3t9EG" id="form5-1m">
+
+
+        <div class="container">
+            <div class="mbr-section-head">
+                <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Dejanos tus
+                        Comentarios</strong></h3>
+                <h4 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2 display-7"></h4>
+            </div>
+            <div class="row justify-content-center mt-4">
+                <!-- <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid"> -->
+
+
+                    <form style="width: 90%;" action="comentario.php" method="post" enctype="multipart/form-data">
+
+                        <input type="text" name="nameform51m" id="nameform51m" placeholder="Nombre" required>
+
+                        <input type="email" name="emailform51m" id="emailform51m" placeholder="Correo" required>
+
+                        <textarea name="textareaform51m" id="textareaform51m" placeholder="Mensaje" rows="4"
+                            cols="50"></textarea>
+
+
+                        <button type="submit">Enviar Comentario</button>
+                    </form>
+                <!-- </div> -->
+            </div>
+        </div>
+    </section>
+    <section class="display-7"
+        style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;">
+        <a href="#" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt=""
+                style="height: 4rem;"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a>
+        <p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="#"></a>
+    </section>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="assets/ytplayer/index.js"></script>
+    <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+    <script src="assets/theme/js/script.js"></script>
+    <script src="assets/formoid/formoid.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</body>
+
+</html>
